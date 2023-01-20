@@ -18,6 +18,11 @@ class Produto
         $this->codigoBarras = $codigo;
     }
 
+    public function __construct(string $titulo)
+    {
+        $this->titulo = $titulo;
+    }
+
     public function acessaCodigoBarras(): void
     {
         echo "<br>" . $this->codigoBarras;
