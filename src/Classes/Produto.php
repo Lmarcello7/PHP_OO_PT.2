@@ -6,7 +6,7 @@ class Produto
 {
     public const NORMA = "1050";
 
-    public string $titulo;
+    private string $titulo;
 
     public string $descricao = "Cerveja Brasileira";
 
@@ -18,7 +18,7 @@ class Produto
         $this->codigoBarras = $codigo;
     }
 
-    public function __construct(string $titulo)
+    public function detalhes(string $titulo)
     {
         $this->titulo = $titulo;
     }
